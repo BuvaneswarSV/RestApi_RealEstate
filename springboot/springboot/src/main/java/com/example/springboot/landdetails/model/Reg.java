@@ -10,7 +10,6 @@ public class Reg {
     private String landName;
     private String custName;
     private String custNum;
-    private String custNameId;
     private double landPrice;
     private String regYear;
     public int getLandId() {
@@ -43,12 +42,6 @@ public class Reg {
     public void setCustNum(String custNum) {
         this.custNum = custNum;
     }
-    public String getCustNameId() {
-        return  custNameId;
-    }
-    public void setCustNameId(String custNameId) {
-        this.custNameId =  custNameId;
-    }
     public double getLandPrice() {
         return landPrice;
     }
@@ -62,13 +55,12 @@ public class Reg {
         this.regYear = regYear;
     }
     public Reg(int landId, String addressPlace, String landName, String custName, String custNum,
-            String custNameId, double landPrice, String regYear) {
+             double landPrice, String regYear) {
         this.landId = landId;
         this.addressPlace = addressPlace;
         this.landName = landName;
         this.custName = custName;
         this.custNum = custNum;
-        this.custNameId = custNameId;
         this.landPrice = landPrice;
         this.regYear = regYear;
     }
